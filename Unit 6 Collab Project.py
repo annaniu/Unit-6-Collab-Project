@@ -1,5 +1,6 @@
 # Tic Tac Toe
 
+# To choose the starting player randomly
 import random
 
 #class Board
