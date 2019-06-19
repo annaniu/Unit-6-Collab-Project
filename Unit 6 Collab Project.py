@@ -1,4 +1,5 @@
 # Tic Tac Toe
+# Edited into an Object Oriented Program and is 2-Player
 
 # Imported so that later on the starting player can be chosen randomly
 import random
@@ -25,7 +26,7 @@ class Board:
         print(' ' + self.positions[1] + ' | ' + self.positions[2] + ' | ' + self.positions[3])
         print('   |   |')
 
-     # Checks if there is open spot
+     # Checks if there is an open spot
     def checkOpenPos(self, i):
         return self.positions[i] == ' '
 
