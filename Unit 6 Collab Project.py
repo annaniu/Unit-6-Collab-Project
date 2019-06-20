@@ -1,5 +1,5 @@
-# Tic Tac Toe
-# Edited into an Object Oriented Program and is 2-Player
+# BYU Project # 1 Modiefied Tic Tac Toe Project Kevin Fang and Anna Niu
+# Edited into an Object Oriented Program and is 2-Player, with each player being able to decide whether 'X' or 'O'
 
 # Imported so that later on the starting player can be chosen randomly
 import random
@@ -7,11 +7,11 @@ import random
 # Makes the class Board
 class Board:
 
-    # Initializes the object
+    # Initializes the object for positions
     def __init__(self):
         self.positions = [' '] * 10
 
-    # Creates the visual game board
+    # Creates the visual game board using '|'
     def printBoard(self):
         # "board" is a list of 10 strings representing the board (ignore index 0)
         print('   |   |')
@@ -119,12 +119,12 @@ while True:
             if board.isWon(player1.symbol):
                 # Prints board.
                 board.printBoard()
-                print('Hooray! Player 1 has won the game!')
+                print('Player 1 Wins')
                 gameIsPlaying = False
             else: # Game is a tie.
                 if board.fullBoard():
                     board.printBoard()
-                    print('The game is a tie!')
+                    print('Tie Game')
                     break
                 else: # Game goes to Player 2's turn
                     turn = 'player 2'
@@ -140,12 +140,12 @@ while True:
             if board.isWon(player2.symbol):
                 # Prints board
                 board.printBoard()
-                print('Hooray! Player 2 has won the game!')
+                print('Player 2 Wins')
                 gameIsPlaying = False
             else: # Game is a tie
                 if board.fullBoard():
                     board.printBoard()
-                    print('The game is a tie!')
+                    print('Tie Game')
                     break
                 else: # Game goes to Player 1's turn
                     turn = 'player 1'
