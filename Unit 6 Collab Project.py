@@ -90,9 +90,9 @@ board = Board()
 # Utilizes the random module to randomly determine which player goes first
 def whoGoesFirst():
     if random.randint(0, 1) == 0:
-        return 'player 2'
+        return 'Player 2'
     else:
-        return 'player 1'
+        return 'Player 1'
 
 # Allows the player to choose if they would like to play again
 def playAgain():
